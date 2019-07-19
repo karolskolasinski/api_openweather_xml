@@ -30,6 +30,7 @@ public class Current {
     private Weather weather;
 //    @XmlElement(name = "lastupdate")
     private Lastupdate lastupdate;
+//    @XmlElement(name = "sun")
     private Sun sun;
 
     @XmlElement(name = "city")
@@ -62,11 +63,6 @@ public class Current {
         return clouds;
     }
 
-    @XmlElement(name = "sun")
-    public Sun getSun() {
-        return sun;
-    }
-
     @XmlElement(name = "visibility")
     public Visibility getVisibility() {
         return visibility;
@@ -85,6 +81,11 @@ public class Current {
     @XmlElement(name = "lastupdate")
     public Lastupdate getLastupdate() {
         return lastupdate;
+    }
+
+    @XmlElement(name = "sun")
+    public Sun getSun() {
+        return sun;
     }
 
     public void setCity(City city) {

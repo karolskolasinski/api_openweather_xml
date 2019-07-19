@@ -29,7 +29,6 @@ public class Main {
 
         przetwarzanieXML(scanner, requestURL);
 
-
     }
 
     private static void przetwarzanieXML(Scanner scanner, String requestURL) {
@@ -52,12 +51,12 @@ public class Main {
                         System.out.println("Temperature: " + current.getTemperature());
                     }
                     break;
-                case "WILGOTNOŚĆ":
+                case "WILGOTNOSC":
                     if (current.getHumidity() != null) {
                         System.out.println("Humidity: " + current.getHumidity());
                     }
                     break;
-                case "CIŚNIENIE":
+                case "CISNIENIE":
                     if (current.getPressure() != null) {
                         System.out.println("Pressure: " + current.getPressure());
                     }
