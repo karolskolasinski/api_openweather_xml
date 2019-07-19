@@ -1,4 +1,5 @@
-package com.java.gda25.openweather.model;
+package com.java.gda25.api_openweather_xml.model;
+
 
 import lombok.ToString;
 
@@ -6,26 +7,26 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @ToString
-@XmlRootElement(name = "speed")
-public class Speed {
+@XmlRootElement(name = "humidity")
+public class Humidity {
     private String value;
-    private String name;
+    private String unit;
 
     @XmlAttribute(name = "value")
     public String getValue() {
         return value;
     }
 
-    @XmlAttribute(name = "name")
-    public String getName() {
-        return name;
+    @XmlAttribute(name = "unit")
+    public String getUnit() {
+        return unit;
     }
 
     public void setValue(String value) {
         this.value = value;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 }

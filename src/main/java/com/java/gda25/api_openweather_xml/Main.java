@@ -1,6 +1,6 @@
-package com.java.gda25.openweather;
+package com.java.gda25.api_openweather_xml;
 
-import com.java.gda25.openweather.model.*;
+import com.java.gda25.api_openweather_xml.model.*;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -20,7 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Witaj w konsolowej aplikacji do pobierania pogody z openweather API.");
+        System.out.println("Witaj w konsolowej aplikacji do pobierania pogody z api_openweather_xml API.");
 
         String city = loadCityFromUser(scanner).toString();
         String requestURL = URL.replace("{city}", city.toLowerCase());

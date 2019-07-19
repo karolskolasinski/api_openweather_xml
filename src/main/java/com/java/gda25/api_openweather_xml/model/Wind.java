@@ -1,4 +1,4 @@
-package com.java.gda25.openweather.model;
+package com.java.gda25.api_openweather_xml.model;
 
 
 import lombok.ToString;
